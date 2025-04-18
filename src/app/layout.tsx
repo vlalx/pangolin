@@ -13,6 +13,8 @@ import { createApiClient, internal, priv } from "@app/lib/api";
 import { AxiosResponse } from "axios";
 import { IsSupporterKeyVisibleResponse } from "@server/routers/supporterKey";
 import SupporterMessage from "./components/SupporterMessage";
+import {NextIntlClientProvider} from 'next-intl';
+import {getLocale} from 'next-intl/server';
 
 export const metadata: Metadata = {
     title: `Dashboard - Pangolin`,
@@ -42,26 +44,28 @@ export default async function RootLayout({
     supporterData.tier = res.data.data.tier;
 
     return (
-        <html suppressHydrationWarning>
+        <html suppressHydrationWarning lang={locale}>
             <body className={`${font.className} h-screen overflow-hidden`}>
-                <ThemeProvider
-                    attribute="class"
-                    defaultTheme="system"
-                    enableSystem
-                    disableTransitionOnChange
-                >
-                    <EnvProvider env={pullEnv()}>
-                        <SupportStatusProvider supporterStatus={supporterData}>
-                            {/* Main content */}
-                            <div className="h-full flex flex-col">
-                                <div className="flex-1 overflow-auto">
-                                    {children}
+                <NextIntlClientProvider locale={locale} messages={messages}>
+                    <ThemeProvider
+                        attribute="class"
+                        defaultTheme="system"
+                        enableSystem
+                        disableTransitionOnChange
+                    >
+                        <EnvProvider env={pullEnv()}>
+                            <SupportStatusProvider supporterStatus={supporterData}>
+                                {/* Main content */}
+                                <div className="h-full flex flex-col">
+                                    <div className="flex-1 overflow-auto">
+                                        {children}
+                                    </div>
                                 </div>
-                            </div>
-                        </SupportStatusProvider>
-                    </EnvProvider>
-                    <Toaster />
-                </ThemeProvider>
+                            </SupportStatusProvider>
+                        </EnvProvider>
+                        <Toaster />
+                    </ThemeProvider>
+                </NextIntlClientProvider>
             </body>
         </html>
     );
