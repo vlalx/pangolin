@@ -14,4 +14,14 @@
     "ForgotPassword": "Forgot your password?",
     "Login": "Log in"
   }
+  "LoginSite": {
+    "Welcome": "Welcome to Pangolin",
+    "Subtitle": "Log in to get started",
+    "Email": "Email",
+    "EmailPlaceholder": "Enter your email",
+    "Password": "Password",
+    "PasswordPlaceholder": "Enter your password",
+    "ForgotPassword": "Forgot your password?",
+    "Login": "Log in"
+  }
 }
