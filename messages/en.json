@@ -1,0 +1,17 @@
+{
+  "AuthenticationSite": {
+    "PoweredBy": "Powered by [Pangolin](https://github.com/fosrl/pangolin)",
+    "AuthenticationRequired": "Authentication Required",
+    "ChooseMethod": "Choose your preferred method to access {resource}",
+    "PIN": "PIN",
+    "User": "User",
+    "PinCodeLabel": "6-digit PIN Code",
+    "LoginWithPIN": "Login in with PIN",
+    "Email": "Email",
+    "EnterEmail": "Enter your email",
+    "Password": "Password",
+    "EnterPassword": "Enter your password",
+    "ForgotPassword": "Forgot your password?",
+    "Login": "Log in"
+  }
+}
