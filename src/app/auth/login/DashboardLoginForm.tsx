@@ -14,10 +14,14 @@ import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import Image from "next/image";
 import { cleanRedirect } from "@app/lib/cleanRedirect";
-
+import {useTranslations} from 'next-intl';
+ 
 type DashboardLoginFormProps = {
     redirect?: string;
 };
+
+export default function LoginSite() {
+  const t = useTranslations('LoginSite');
 
 export default function DashboardLoginForm({
     redirect
@@ -49,9 +53,9 @@ export default function DashboardLoginForm({
                 </div>
                 <div className="text-center space-y-1">
                     <h1 className="text-2xl font-bold mt-1">
-                        Welcome to Pangolin
+                        {t('Welcome')}
                     </h1>
-                    <p className="text-sm text-muted-foreground">Log in to get started</p>
+                    <p className="text-sm text-muted-foreground">{t('Subtitle')}</p>
                 </div>
             </CardHeader>
             <CardContent>
