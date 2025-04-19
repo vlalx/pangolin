@@ -32,6 +32,7 @@ export default async function RootLayout({
     children: React.ReactNode;
 }>) {
     const env = pullEnv();
+    const locale = await getLocale();
 
     let supporterData = {
         visible: true
@@ -46,7 +47,7 @@ export default async function RootLayout({
     return (
         <html suppressHydrationWarning lang={locale}>
             <body className={`${font.className} h-screen overflow-hidden`}>
-                <NextIntlClientProvider locale={locale} messages={messages}>
+                <NextIntlClientProvider>
                     <ThemeProvider
                         attribute="class"
                         defaultTheme="system"
