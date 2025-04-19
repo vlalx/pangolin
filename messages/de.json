@@ -41,11 +41,15 @@
       "list": "Organisationen"
     },
     "navbar": {
+      "allUsers": "Alle Benutzer",
+      "access": "Zugriffskontrolle",
       "sites": "Websites",
       "resources": "Ressourcen",
-      "users": "Benutzer & Rollen",
+      "roles": "Rollen",
+      "users": "Benutzer",
       "links": "Teilbare Links",
-      "general": "Allgemein"
+      "settings": "Einstellungen",
+      "invitations": "Einladungen"
     },
     "footer": {
       "page": "Seite {number} von {number}",
