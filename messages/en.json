@@ -23,5 +23,248 @@
     "PasswordPlaceholder": "Enter your password",
     "ForgotPassword": "Forgot your password?",
     "Login": "Log in"
+  },
+  "org": {
+    "welcome": "Welcome to Pangolin",
+    "membership": "You're a member of {number} organization."
+  },
+  "layout": {
+    "header": {
+      "documentation": "Documentation",
+      "support": "Support",
+      "organization": "Organization {name}"
+    },
+    "orgSelector": {
+      "search": "Search…",
+      "create": "Create",
+      "new": "New Organization",
+      "list": "Organizations"
+    },
+    "navbar": {
+      "sites": "Sites",
+      "resources": "Resources",
+      "users": "User & Roles",
+      "links": "Shareable Links",
+      "general": "General"
+    },
+    "footer": {
+      "page": "Page {number} of {number}",
+      "rows": "Rows per page",
+      "pangolin": "Pangolin",
+      "builtBy": "Built by Fossorial",
+      "openSource": "Open Source",
+      "documentation": "Documentation",
+      "version": "{version}"
+    }
+  },
+  "sites": {
+    "hero": {
+      "title": "Newt (Recommended)",
+      "description": "For the best user experience, use Newt. It uses WireGuard under the hood and allows you to address your private resources by their LAN address on your private network from within the Pangolin dashboard.",
+      "docker": "Runs in Docker",
+      "shell": "Runs in shell on macOS, Linux, and Windows",
+      "install": "Install Newt",
+      "basic": "Basic WireGuard<br>",
+      "basicDesc": "Use any WireGuard client to connect. You'll have to access your internal resources by their peer IP.",
+      "compatible": "Compatible with all WireGuard clients<br>",
+      "manual": "Manual configuration required"
+    },
+    "content": {
+      "title": "Manage Sites",
+      "description": "Allow connectivity to your network through secure tunnels",
+      "search": "Search sites",
+      "add": "Add Site",
+      "table": {
+        "name": "Name",
+        "status": "Online",
+        "site": "Site",
+        "in": "Data In",
+        "out": "Data Out",
+        "type": "Connection Type",
+        "online": "Online",
+        "offline": "Offline",
+        "edit": "Edit →",
+        "settings": "View settings",
+        "delete": "Delete"
+      }
+    },
+    "popup": {
+      "title": "Create Site",
+      "description": "Create a new site to start connection for this site",
+      "name": "Name",
+      "placeholder": "Site name",
+      "nameDesc": "This is the name that will be displayed for this site.",
+      "method": "Method",
+      "options": {
+        "local": "Local",
+        "newt": "Newt",
+        "wireguard": "WireGuard"
+      },
+      "methodDesc": "This is how you will expose connections.",
+      "warning": "You will only be able to see the configuration once.",
+      "learn": "Learn how to install Newt on your system",
+      "copied": "I have copied the config",
+      "create": "Create Site",
+      "close": "Close"
+    }
+  },
+  "resources": {
+    "hero": {
+      "title": "Resources",
+      "description": "Resources are proxy servers for applications running in your private network. Create a resource for each HTTP or HTTPS application in your private network. Each resource must be connected to a site to allow private and secure connection through the encrypted WireGuard tunnel.",
+      "feature1": "Secure connectivity with WireGuard encryption",
+      "feature2": "Configure multiple authentication methods",
+      "feature3": "User and role-based access control"
+    },
+    "content": {
+      "title": "Manage Resources",
+      "description": "Create secure proxies to your private applications",
+      "search": "Search resources",
+      "table": {
+        "name": "Name",
+        "site": "Site",
+        "url": "Full URL",
+        "auth": "Authentication",
+        "protected": "Protected",
+        "unprotected": "Not Protected",
+        "edit": "Edit →"
+      },
+      "add": "Add Resource"
+    },
+    "popup": {
+      "title": "Create Resource",
+      "description": "Create a new resource to proxy request to your app",
+      "name": "Name",
+      "placeholder": "My Resource",
+      "nameDesc": "This is the name that will be displayed for this resource.",
+      "subdomain": "Subdomain",
+      "subdomainPlaceholder": "Enter subdomain",
+      "subdomainDesc": "This is the fully qualified domain name that will be used to access the resource.",
+      "site": "Site",
+      "siteSearch": "Search site…",
+      "siteDesc": "This is the site that will be used in the dashboard.",
+      "create": "Create Resource",
+      "close": "Close"
+    }
+  },
+  "shareableLinks": {
+    "hero": {
+      "title": "Shareable Links",
+      "description": "Create shareable links to your resources. Links provide temporary or unlimited access to your resource. You can configure the expiration duration of the link when you create one.",
+      "feature1": "Easy to create and share",
+      "feature2": "Configurable expiration duration",
+      "feature3": "Secure and revocable"
+    },
+    "content": {
+      "title": "Manage Shareable Links",
+      "description": "Create shareable links to grant temporary or permanent access to your resources",
+      "search": "Search links",
+      "create": "Create Share Link",
+      "table": {
+        "resource": "Resource",
+        "title": "Title",
+        "created": "Created",
+        "expires": "Expires"
+      },
+      "empty": "No links. Create one to get started."
+    },
+    "createPopup": {
+      "title": "Create Shareable Link",
+      "description": "Anyone with this link can access the resource",
+      "resource": "Resource",
+      "resourcePlaceholder": "Select resource",
+      "resourceSearch": "Search resources…",
+      "customTitle": "Title (optional)",
+      "customTitlePlaceholder": "Enter title",
+      "expireIn": "Expire in",
+      "units": {
+        "minutes": "Minutes",
+        "hours": "Hours",
+        "days": "Days",
+        "months": "Months",
+        "years": "Years",
+        "never": "Never expire"
+      },
+      "info": "Expiration time is how long the link will be usable and provide access to the resource. After this time, the link will no longer work, and users who used this link will lose access to the resource.",
+      "create": "Create Link",
+      "close": "Close"
+    }
+  },
+  "users": {
+    "content": {
+      "title": "Manage User & Roles",
+      "description": "Invite users and add them to roles to manage access to your organization",
+      "tabs": {
+        "users": "Users",
+        "roles": "Roles"
+      },
+      "userTab": {
+        "search": "Search users",
+        "invite": "Invite User",
+        "table": {
+          "email": "Email",
+          "status": "Status",
+          "role": "Role"
+        },
+        "statuses": {
+          "confirmed": "Confirmed",
+          "notConfirmed": "Not confirmed (?)"
+        },
+        "roles": {
+          "owner": "Owner",
+          "admin": "Admin",
+          "member": "Member"
+        }
+      },
+      "roleTab": {
+        "search": "Search roles",
+        "add": "Add Role",
+        "table": {
+          "name": "Name",
+          "description": "Description"
+        },
+        "roles": {
+          "admin": "Admin",
+          "member": "Member"
+        },
+        "descriptions": {
+          "admin": "Admin role with the most permissions",
+          "member": "Members can only view resources"
+        }
+      }
+    },
+    "invitePopup": {
+      "title": "Invite User",
+      "description": "Grant new users access to your organization",
+      "email": "Email",
+      "emailPlaceholder": "Enter an email",
+      "role": "Role",
+      "rolePlaceholder": "Select role",
+      "expires": "Expires in",
+      "days": {
+        "1": "1 day",
+        "2": "2 days",
+        "3": "3 days",
+        "4": "4 days",
+        "5": "5 days",
+        "6": "6 days",
+        "7": "7 days"
+      },
+      "create": "Create Invitation",
+      "close": "Close"
+    }
+  },
+  "general": {
+    "title": "General",
+    "description": "Configure your organization’s general settings",
+    "sidebar": "General",
+    "orgSettings": "Organization Settings",
+    "orgSettingsDescription": "Manage your organization details and configuration",
+    "name": "Name",
+    "nameDescription": "This is the display name of the org",
+    "save": "Save Settings",
+    "dangerZone": "Danger Zone",
+    "dangerDescription": "Once you delete this org, there is no going back. Please be certain.",
+    "delete": "Delete Organization Data"
   }
 }
