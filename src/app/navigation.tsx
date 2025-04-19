@@ -7,10 +7,13 @@ import {
     Waypoints,
     Combine
 } from "lucide-react";
+import { useTranslations } from 'next-intl';
+
+const t = useTranslations('Layout');
 
 export const rootNavItems: SidebarNavItem[] = [
     {
-        title: "Home",
+        title: {t('subtitle')},
         href: "/"
         // icon: <Home className="h-4 w-4" />
     }
@@ -18,44 +21,44 @@ export const rootNavItems: SidebarNavItem[] = [
 
 export const orgNavItems: SidebarNavItem[] = [
     {
-        title: "Sites",
+        title: "{t('sites')}",
         href: "/{orgId}/settings/sites"
         // icon: <Combine className="h-4 w-4" />
     },
     {
-        title: "Resources",
+        title: "{t('resources')}",
         href: "/{orgId}/settings/resources"
         // icon: <Waypoints className="h-4 w-4" />
     },
     {
-        title: "Access Control",
+        title: "{t('access')}",
         href: "/{orgId}/settings/access",
         // icon: <Users className="h-4 w-4" />,
         autoExpand: true,
         children: [
             {
-                title: "Users",
+                title: "{t('users')}",
                 href: "/{orgId}/settings/access/users",
                 children: [
                     {
-                        title: "Invitations",
+                        title: "{t('invitations')}",
                         href: "/{orgId}/settings/access/invitations"
                     }
                 ]
             },
             {
-                title: "Roles",
+                title: "{t('roles')}",
                 href: "/{orgId}/settings/access/roles"
             }
         ]
     },
     {
-        title: "Shareable Links",
+        title: "{t('links')}",
         href: "/{orgId}/settings/share-links"
         // icon: <LinkIcon className="h-4 w-4" />
     },
     {
-        title: "Settings",
+        title: "{t('settings')}",
         href: "/{orgId}/settings/general"
         // icon: <Settings className="h-4 w-4" />
     }
@@ -63,7 +66,7 @@ export const orgNavItems: SidebarNavItem[] = [
 
 export const adminNavItems: SidebarNavItem[] = [
     {
-        title: "All Users",
+        title: "{t('allUsers')}",
         href: "/admin/users"
         // icon: <Users className="h-4 w-4" />
     }
