@@ -13,7 +13,7 @@ const t = useTranslations('Layout');
 
 export const rootNavItems: SidebarNavItem[] = [
     {
-        title: {t('subtitle')},
+        title: {t('home')},
         href: "/"
         // icon: <Home className="h-4 w-4" />
     }
