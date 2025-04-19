@@ -9,7 +9,7 @@ import {
 } from "lucide-react";
 import { useTranslations } from 'next-intl';
 
-const t = useTranslations('Layout');
+const t = useTranslations('layout');
 
 export const rootNavItems: SidebarNavItem[] = [
     {
