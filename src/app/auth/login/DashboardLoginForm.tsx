@@ -14,7 +14,7 @@ import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import Image from "next/image";
 import { cleanRedirect } from "@app/lib/cleanRedirect";
-import {useTranslations} from 'next-intl';
+import { useTranslations } from 'next-intl';
  
 type DashboardLoginFormProps = {
     redirect?: string;
