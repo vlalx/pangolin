@@ -9,9 +9,8 @@ import {
 } from "lucide-react";
 import { useTranslations } from 'next-intl';
 
-const t = useTranslations('layout');
-
 export const rootNavItems: SidebarNavItem[] = [
+    const t = useTranslations('layout');
     {
         title: "{t('home')}",
         href: "/"
@@ -20,6 +19,7 @@ export const rootNavItems: SidebarNavItem[] = [
 ];
 
 export const orgNavItems: SidebarNavItem[] = [
+    const t = useTranslations('layout');
     {
         title: "{t('sites')}",
         href: "/{orgId}/settings/sites"
@@ -65,6 +65,7 @@ export const orgNavItems: SidebarNavItem[] = [
 ];
 
 export const adminNavItems: SidebarNavItem[] = [
+    const t = useTranslations('layout');
     {
         title: "{t('allUsers')}",
         href: "/admin/users"
