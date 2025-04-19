@@ -49,7 +49,8 @@
       "users": "Users",
       "links": "Shareable Links",
       "settings": "Settings",
-      "invitations": "Invitations"
+      "invitations": "Invitations",
+      "home": "Home"
     },
     "footer": {
       "page": "Page {number} of {number}",
