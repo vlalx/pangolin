@@ -13,8 +13,8 @@ import { createApiClient, internal, priv } from "@app/lib/api";
 import { AxiosResponse } from "axios";
 import { IsSupporterKeyVisibleResponse } from "@server/routers/supporterKey";
 import SupporterMessage from "./components/SupporterMessage";
-import {NextIntlClientProvider} from 'next-intl';
-import {getLocale} from 'next-intl/server';
+import { NextIntlClientProvider } from 'next-intl';
+import { getLocale } from 'next-intl/server';
 
 export const metadata: Metadata = {
     title: `Dashboard - Pangolin`,
