@@ -33,12 +33,15 @@ import {
 } from "@app/components/ui/form";
 import { Alert, AlertDescription } from "@app/components/ui/alert";
 import CreateSiteForm from "../[orgId]/settings/sites/CreateSiteForm";
+import { useTranslations } from 'next-intl';
 
 type Step = "org" | "site" | "resources";
 
+const t = useTranslations('setup');
+
 const orgSchema = z.object({
-    orgName: z.string().min(1, { message: "Organization name is required" }),
-    orgId: z.string().min(1, { message: "Organization ID is required" })
+    orgName: z.string().min(1, { message: "{t('orgNameMessage')}" }),
+    orgId: z.string().min(1, { message: "{t('orgIdMessage')}" })
 });
 
 export default function StepperForm() {
