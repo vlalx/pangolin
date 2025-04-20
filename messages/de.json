@@ -29,18 +29,6 @@
     "membership": "Sie sind Mitglied von {number} Organisation."
   },
   "layout": {
-    "header": {
-      "documentation": "Dokumentation",
-      "support": "Support",
-      "organization": "Organisation {name}"
-    },
-    "orgSelector": {
-      "search": "Suchen…",
-      "create": "Erstellen",
-      "new": "Neue Organisation",
-      "list": "Organisationen"
-    },
-    "navbar": {
       "allUsers": "Alle Benutzer",
       "access": "Zugriffskontrolle",
       "sites": "Websites",
