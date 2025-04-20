@@ -7,6 +7,8 @@ import { Metadata } from "next";
 import { redirect } from "next/navigation";
 import { cache } from "react";
 import { rootNavItems } from "../navigation";
+import { NextIntlClientProvider } from 'next-intl';
+import { getLocale } from 'next-intl/server';
 
 export const metadata: Metadata = {
     title: `Setup - Pangolin`,
@@ -35,12 +37,14 @@ export default async function SetupLayout({
 
     return (
         <>
-            <UserProvider user={user}>
-                <Layout navItems={rootNavItems} showBreadcrumbs={false}>
-                    <div className="w-full max-w-2xl mx-auto md:mt-32 mt-4">
-                        {children}
-                    </div>
-                </Layout>
+            <UserProvider user={user} lang={locale}>
+                <NextIntlClientProvider>
+                    <Layout navItems={rootNavItems} showBreadcrumbs={false}>
+                        <div className="w-full max-w-2xl mx-auto md:mt-32 mt-4">
+                            {children}
+                        </div>
+                    </Layout>
+                </NextIntlClientProvider>
             </UserProvider>
         </>
     );
