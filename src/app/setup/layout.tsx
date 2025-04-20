@@ -38,15 +38,15 @@ export default async function SetupLayout({
 
     return (
         <>
-            <UserProvider user={user} lang={locale}>
-                <NextIntlClientProvider>
+            <NextIntlClientProvider lang={locale}>
+                <UserProvider user={user}>
                     <Layout navItems={rootNavItems} showBreadcrumbs={false}>
                         <div className="w-full max-w-2xl mx-auto md:mt-32 mt-4">
                             {children}
                         </div>
                     </Layout>
-                </NextIntlClientProvider>
-            </UserProvider>
+                </UserProvider>
+            </NextIntlClientProvider>
         </>
     );
 }
