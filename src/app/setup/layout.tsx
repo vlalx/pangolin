@@ -24,6 +24,7 @@ export default async function SetupLayout({
 }) {
     const getUser = cache(verifySession);
     const user = await getUser();
+    const locale = await getLocale();
 
     const env = pullEnv();
 
