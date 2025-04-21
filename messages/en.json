@@ -34,47 +34,38 @@
             "regenerate": "Regenerate",
             "cancel": "Cancel",
             "close": "Close"
-            },
+        },
         "General": {
-
-            },
+        },
         "Resources": {
-
-            },
+        },
         "Share": {
-
-            },
+        },
         "Sites": {
-
-            }
-        },
+        }
+    },
     "Admin": {
-
         "Users": {
-
-            }
-        },
+        }
+    },
     "Auth": {
-
         "Login": {
-            },
+        },
         "Reset": {
-            },
+        },
         "Resource": {
-            },
+        },
         "Signup": {
-            },
+        },
         "Verify": {
-            }
-        },
+        }
+    },
     "Components": {
-
-        },
+    },
     "Invite": {
-
-        },            
+    },            
     "setup": {
         "orgNameMessage": "Organization name is required",
         "orgIdMessage": "Organization ID is required"
-        }
+    }
 }
