@@ -18,6 +18,7 @@ import { toast } from "@app/hooks/useToast";
 import { createApiClient } from "@app/lib/api";
 import { useEnvContext } from "@app/hooks/useEnvContext";
 import { useLocale, useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 
 export type InvitationRow = {
     id: string;
@@ -108,6 +109,9 @@ export default function InvitationsTable({
     ];
 
     async function removeInvitation() {
+
+        const t = await getTranslations('Org.Access');
+        
         if (selectedInvitation) {
             const res = await api
                 .delete(
