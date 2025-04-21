@@ -17,6 +17,7 @@ import { useOrgContext } from "@app/hooks/useOrgContext";
 import { toast } from "@app/hooks/useToast";
 import { createApiClient } from "@app/lib/api";
 import { useEnvContext } from "@app/hooks/useEnvContext";
+import { getTranslations } from 'next-intl/server';
 
 export type InvitationRow = {
     id: string;
@@ -42,6 +43,8 @@ export default function InvitationsTable({
     const api = createApiClient(useEnvContext());
     const { org } = useOrgContext();
 
+    const t = await getTranslations('Org.Access');
+
     const columns: ColumnDef<InvitationRow>[] = [
         {
             id: "dots",
@@ -51,7 +54,7 @@ export default function InvitationsTable({
                     <DropdownMenu>
                         <DropdownMenuTrigger asChild>
                             <Button variant="ghost" className="h-8 w-8 p-0">
-                                <span className="sr-only">Open menu</span>
+                                <span className="sr-only">{t('openMenu')}</span>
                                 <MoreHorizontal className="h-4 w-4" />
                             </Button>
                         </DropdownMenuTrigger>
@@ -62,7 +65,7 @@ export default function InvitationsTable({
                                     setSelectedInvitation(invitation);
                                 }}
                             >
-                                <span>Regenerate Invitation</span>
+                                <span>{t('regenerateInv')}</span>
                             </DropdownMenuItem>
                             <DropdownMenuItem
                                 onClick={() => {
@@ -71,7 +74,7 @@ export default function InvitationsTable({
                                 }}
                             >
                                 <span className="text-red-500">
-                                    Remove Invitation
+                                    {t('removeInv')}
                                 </span>
                             </DropdownMenuItem>
                         </DropdownMenuContent>
@@ -112,16 +115,16 @@ export default function InvitationsTable({
                 .catch((e) => {
                     toast({
                         variant: "destructive",
-                        title: "Failed to remove invitation",
+                        title: "{t('removeFailed')}",
                         description:
-                            "An error occurred while removing the invitation."
+                            "{t('removeError')}"
                     });
                 });
 
             if (res && res.status === 200) {
                 toast({
                     variant: "default",
-                    title: "Invitation removed",
+                    title: "{t('removedInv')}",
                     description: `The invitation for ${selectedInvitation.email} has been removed.`
                 });
 
@@ -150,19 +153,17 @@ export default function InvitationsTable({
                             <b>{selectedInvitation?.email}</b>?
                         </p>
                         <p>
-                            Once removed, this invitation will no longer be
-                            valid. You can always re-invite the user later.
+                            {t('removeInvWarn')}
                         </p>
                         <p>
-                            To confirm, please type the email address of the
-                            invitation below.
+                            {t('confirm')}
                         </p>
                     </div>
                 }
                 buttonText="Confirm Remove Invitation"
                 onConfirm={removeInvitation}
                 string={selectedInvitation?.email ?? ""}
-                title="Remove Invitation"
+                title="{t('removeInv')}"
             />
             <RegenerateInvitationForm
                 open={isRegenerateModalOpen}
