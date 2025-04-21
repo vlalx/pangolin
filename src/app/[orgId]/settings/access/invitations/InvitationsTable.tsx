@@ -17,7 +17,7 @@ import { useOrgContext } from "@app/hooks/useOrgContext";
 import { toast } from "@app/hooks/useToast";
 import { createApiClient } from "@app/lib/api";
 import { useEnvContext } from "@app/hooks/useEnvContext";
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
 export type InvitationRow = {
     id: string;
@@ -44,6 +44,7 @@ export default function InvitationsTable({
     const { org } = useOrgContext();
 
     const t = useTranslations('Org.Access');
+    const locale = useLocale();
 
     const columns: ColumnDef<InvitationRow>[] = [
         {
