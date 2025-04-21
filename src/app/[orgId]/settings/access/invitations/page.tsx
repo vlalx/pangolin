@@ -69,7 +69,7 @@ export default async function InvitationsPage(props: InvitationsPageProps) {
             id: invite.inviteId,
             email: invite.email,
             expiresAt: new Date(Number(invite.expiresAt)).toISOString(),
-            role: invite.roleName || "{t('unknownRole')}",
+            role: invite.roleName || {t('unknownRole')},
             roleId: invite.roleId
         };
     });
@@ -77,8 +77,8 @@ export default async function InvitationsPage(props: InvitationsPageProps) {
     return (
         <>
             <SettingsSectionTitle
-                title="{t('openInvitations')}"
-                description="{t('manageInvitations')}"
+                title={t('openInvitations')}
+                description={t('manageInvitations')}
             />
             <UserProvider user={user!}>
                 <OrgProvider org={org}>
