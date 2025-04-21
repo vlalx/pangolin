@@ -9,6 +9,7 @@ import UserProvider from "@app/providers/UserProvider";
 import { verifySession } from "@app/lib/auth/verifySession";
 import AccessPageHeaderAndNav from "../AccessPageHeaderAndNav";
 import SettingsSectionTitle from "@app/components/SettingsSectionTitle";
+import { getTranslations } from 'next-intl/server';
 
 type InvitationsPageProps = {
     params: Promise<{ orgId: string }>;
@@ -21,6 +22,8 @@ export default async function InvitationsPage(props: InvitationsPageProps) {
 
     const getUser = cache(verifySession);
     const user = await getUser();
+
+    const t = await getTranslations('Org.Access');
 
     let invitations: {
         inviteId: string;
@@ -66,7 +69,7 @@ export default async function InvitationsPage(props: InvitationsPageProps) {
             id: invite.inviteId,
             email: invite.email,
             expiresAt: new Date(Number(invite.expiresAt)).toISOString(),
-            role: invite.roleName || "Unknown Role",
+            role: invite.roleName || "{t('unknownRole')}",
             roleId: invite.roleId
         };
     });
@@ -74,8 +77,8 @@ export default async function InvitationsPage(props: InvitationsPageProps) {
     return (
         <>
             <SettingsSectionTitle
-                title="Open Invitations"
-                description="Manage your invitations to other users"
+                title="{t('openInvitations')}"
+                description="{t('manageInvitations')}"
             />
             <UserProvider user={user!}>
                 <OrgProvider org={org}>
