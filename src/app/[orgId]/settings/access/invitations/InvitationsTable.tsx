@@ -120,16 +120,16 @@ export default function InvitationsTable({
                 .catch((e) => {
                     toast({
                         variant: "destructive",
-                        title: {t('removeFailed')},
+                        title: t('removeFailed'),
                         description:
-                            {t('removeError')}
+                            t('removeError')
                     });
                 });
 
             if (res && res.status === 200) {
                 toast({
                     variant: "default",
-                    title: {t('removedInv')},
+                    title: t('removedInv'),
                     description: `The invitation for ${selectedInvitation.email} has been removed.`
                 });
 
