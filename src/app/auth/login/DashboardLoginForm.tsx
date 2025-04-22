@@ -24,7 +24,7 @@ export default function DashboardLoginForm({
     redirect
 }: DashboardLoginFormProps) {
     const router = useRouter();
-    const t = useTranslations('LoginSite');
+    const t = useTranslations();
     // const api = createApiClient(useEnvContext());
     //
     // useEffect(() => {
