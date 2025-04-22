@@ -53,5 +53,6 @@
     "adminViewManageUsers": "View and manage all users in the system",
     "adminUserTableTitle": "Server Users",
     "adminUserTableSearch": "Search server users...",
-    "adminErrorUserDelete": "Error deleting user"
+    "adminErrorUserDelete": "Error deleting user",
+    "loginSubtitle": "Logge dich ein um loszulegen"
 }
