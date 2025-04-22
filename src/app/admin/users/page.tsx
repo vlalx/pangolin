@@ -4,6 +4,7 @@ import { AxiosResponse } from "axios";
 import SettingsSectionTitle from "@app/components/SettingsSectionTitle";
 import { AdminListUsersResponse } from "@server/routers/user/adminListUsers";
 import UsersTable, { GlobalUserRow } from "./AdminUsersTable";
+import { getTranslations } from 'next-intl/server';
 
 type PageProps = {
     params: Promise<{ orgId: string }>;
@@ -32,11 +33,13 @@ export default async function UsersPage(props: PageProps) {
         };
     });
 
+    const t = await getTranslations();
+
     return (
         <>
             <SettingsSectionTitle
-                title="Manage All Users"
-                description="View and manage all users in the system"
+                title={t('adminManageUsers')}
+                description={t('adminViewManageUsers')}
             />
             <UsersTable users={userRows} />
         </>
