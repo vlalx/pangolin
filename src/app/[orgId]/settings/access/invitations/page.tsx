@@ -23,7 +23,7 @@ export default async function InvitationsPage(props: InvitationsPageProps) {
     const getUser = cache(verifySession);
     const user = await getUser();
 
-    const t = await getTranslations('Org.Access');
+    const t = await getTranslations();
 
     let invitations: {
         inviteId: string;
