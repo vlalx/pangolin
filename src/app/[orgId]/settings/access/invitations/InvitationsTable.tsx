@@ -44,7 +44,7 @@ export default function InvitationsTable({
     const api = createApiClient(useEnvContext());
     const { org } = useOrgContext();
 
-    const t = useTranslations('Org.Access');
+    const t = useTranslations();
     const locale = useLocale();
 
     const columns: ColumnDef<InvitationRow>[] = [
@@ -110,7 +110,7 @@ export default function InvitationsTable({
 
     async function removeInvitation() {
 
-        const t = await getTranslations('Org.Access');
+        const t = await getTranslations();
         
         if (selectedInvitation) {
             const res = await api
