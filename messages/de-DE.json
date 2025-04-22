@@ -54,5 +54,5 @@
     "adminUserTableTitle": "Server Users",
     "adminUserTableSearch": "Search server users...",
     "adminErrorUserDelete": "Error deleting user",
-    "loginSubtitle": "Logge dich ein um loszulegen"
+    "loginSubtitle": "Log in to get started"
 }
