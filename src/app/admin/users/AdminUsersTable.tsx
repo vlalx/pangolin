@@ -11,6 +11,7 @@ import { toast } from "@app/hooks/useToast";
 import { formatAxiosError } from "@app/lib/api";
 import { createApiClient } from "@app/lib/api";
 import { useEnvContext } from "@app/hooks/useEnvContext";
+import { useTranslations } from 'next-intl';
 
 export type GlobalUserRow = {
     id: string;
@@ -31,14 +32,16 @@ export default function UsersTable({ users }: Props) {
 
     const api = createApiClient(useEnvContext());
 
+    const t = useTranslations();
+
     const deleteUser = (id: string) => {
         api.delete(`/user/${id}`)
             .catch((e) => {
                 console.error("Error deleting user", e);
                 toast({
                     variant: "destructive",
-                    title: "Error deleting user",
-                    description: formatAxiosError(e, "Error deleting user")
+                    title: t('adminErrorUserDelete'),
+                    description: formatAxiosError(e, t('adminErrorUserDelete'))
                 });
             })
             .then(() => {
