@@ -53,7 +53,7 @@ export default function DashboardLoginForm({
                     <h1 className="text-2xl font-bold mt-1">
                         {t('welcome')}
                     </h1>
-                    <p className="text-sm text-muted-foreground">{t('subtitle')}</p>
+                    <p className="text-sm text-muted-foreground">{t('loginSubtitle')}</p>
                 </div>
             </CardHeader>
             <CardContent>
