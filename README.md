@@ -2,6 +2,7 @@
     <h2 align="center"><a href="https://fossorial.io"><img alt="pangolin" src="public/logo//word_mark.png" width="400" /></a></h2>
 
 [![Documentation](https://img.shields.io/badge/docs-latest-blue.svg?style=flat-square)](https://docs.fossorial.io/)
+[![Crowdin](https://badges.crowdin.net/pangolin-loko/localized.svg)](https://crowdin.com)
 [![Docker](https://img.shields.io/docker/pulls/fosrl/pangolin?style=flat-square)](https://hub.docker.com/r/fosrl/pangolin)
 ![Stars](https://img.shields.io/github/stars/fosrl/pangolin?style=flat-square)
 [![Discord](https://img.shields.io/discord/1325658630518865980?logo=discord&style=flat-square)](https://discord.gg/HCJR8Xhme4)
