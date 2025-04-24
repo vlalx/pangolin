@@ -2,6 +2,7 @@
 
 import ProfileIcon from "@app/components/ProfileIcon";
 import Link from "next/link";
+import LocaleSwitcher from '@app/components/LocaleSwitcher';
 
 interface TopBarProps {
     orgId?: string;
