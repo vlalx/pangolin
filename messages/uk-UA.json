@@ -1,8 +1,8 @@
 {
     "locales": {
-        "label": "Language",
-        "en": "English",
-        "de-DE": "German"
+        "label": "Мова:",
+        "en": "Українська",
+        "de-DE": "Німецька"
     },
     "unknownRole": "Невідома Роль",
     "openInvitations": "Відкриті запрошення",
