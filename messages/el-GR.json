@@ -1,8 +1,8 @@
 {
     "locales": {
-        "label": "Language",
-        "en": "English",
-        "de-DE": "German"
+        "label": "Γλώσσα",
+        "en": "Αγγλικά",
+        "de-DE": "Γερμανικά"
     },
     "unknownRole": "Άγνωστος Ρόλος",
     "openInvitations": "Ανοιχτές Προσκλήσεις",
