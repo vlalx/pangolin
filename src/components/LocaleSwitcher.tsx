@@ -14,7 +14,7 @@ export default function LocaleSwitcher() {
           label: t('en')
         },
         {
-          value: 'de',
+          value: 'de-DE',
           label: t('de-DE')
         }
       ]}
