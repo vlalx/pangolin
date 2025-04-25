@@ -30,11 +30,12 @@ export function TopBar({ orgId, orgs }: TopBarProps) {
                     Support
                 </Link>
             </div>
+            <div className="mb-[2px] flex items-center">
+                <LocaleSwitcher />
+            </div>
             <div>
                 <ProfileIcon />
             </div>
-            <div className="mb-[2px] flex items-center">
-                <LocaleSwitcher />
           </div>
         </div>
     );
