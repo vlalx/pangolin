@@ -1,4 +1,9 @@
 {
+    "locales": {
+        "label": "Language",
+        "en": "English",
+        "de-DE": "German"
+    },
     "unknownRole": "Neznámá role",
     "openInvitations": "Otevřít pozvánky",
     "manageInvitations": "Spravujte své pozvánky ostatním uživatelům",
