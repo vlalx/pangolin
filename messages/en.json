@@ -1,4 +1,8 @@
 {
+    "locales": {
+        "en": "Englisch",
+        "de-DE": "Deutsch"
+    }
     "unknownRole": "Unknown Role",
     "openInvitations": "Open Invitations",
     "manageInvitations": "Manage your invitations to other users",
