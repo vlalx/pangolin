@@ -1,8 +1,8 @@
 {
     "locales": {
-        "label": "Language",
-        "en": "English",
-        "de-DE": "German"
+        "label": "Jazyk",
+        "en": "Anglické",
+        "de-DE": "Němčina"
     },
     "unknownRole": "Neznámá role",
     "openInvitations": "Otevřít pozvánky",
