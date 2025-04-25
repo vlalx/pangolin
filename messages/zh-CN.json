@@ -1,8 +1,8 @@
 {
     "locales": {
-        "label": "Language",
-        "en": "English",
-        "de-DE": "German"
+        "label": "语言",
+        "en": "Distr.",
+        "de-DE": "德文"
     },
     "unknownRole": "未知角色",
     "openInvitations": "打开邀请",
