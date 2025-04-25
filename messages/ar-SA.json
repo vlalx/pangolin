@@ -1,4 +1,9 @@
 {
+    "locales": {
+        "label": "اللغة",
+        "en": "الإنكليزية",
+        "de-DE": "الألمانية"
+    },
     "unknownRole": "دور مجهول",
     "openInvitations": "دعوات مفتوحة",
     "manageInvitations": "إدارة الدعوات الخاصة بك للمستخدمين الآخرين",

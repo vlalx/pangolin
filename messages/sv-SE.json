@@ -1,4 +1,9 @@
 {
+    "locales": {
+        "label": "Språk",
+        "en": "Engelska",
+        "de-DE": "Tyska"
+    },
     "unknownRole": "Okänd roll",
     "openInvitations": "Öppna inbjudningar",
     "manageInvitations": "Hantera dina inbjudningar till andra användare",

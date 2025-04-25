@@ -1,4 +1,9 @@
 {
+    "locales": {
+        "label": "Kieli",
+        "en": "Englanti",
+        "de-DE": "Saksa"
+    },
     "unknownRole": "Tuntematon Rooli",
     "openInvitations": "Avaa Kutsut",
     "manageInvitations": "Hallitse kutsujasi muille käyttäjille",

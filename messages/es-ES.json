@@ -1,4 +1,9 @@
 {
+    "locales": {
+        "label": "Idioma",
+        "en": "Inglés",
+        "de-DE": "Alemán"
+    },
     "unknownRole": "Rol desconocido",
     "openInvitations": "Invitaciones abiertas",
     "manageInvitations": "Administra tus invitaciones a otros usuarios",

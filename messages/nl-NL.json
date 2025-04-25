@@ -1,4 +1,9 @@
 {
+    "locales": {
+        "label": "Taal",
+        "en": "Nederlands",
+        "de-DE": "Duits"
+    },
     "unknownRole": "Onbekende rol",
     "openInvitations": "Open uitnodigingen",
     "manageInvitations": "Beheer je uitnodigingen aan andere gebruikers",

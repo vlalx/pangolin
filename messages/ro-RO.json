@@ -1,4 +1,9 @@
 {
+    "locales": {
+        "label": "Limba",
+        "en": "Română",
+        "de-DE": "Germană"
+    },
     "unknownRole": "Rolul necunoscut",
     "openInvitations": "Deschide invitațiile",
     "manageInvitations": "Gestionează-ți invitațiile către alți utilizatori",
