@@ -1,8 +1,8 @@
 {
     "locales": {
-        "label": "Language",
-        "en": "English",
-        "de-DE": "German"
+        "label": "Kieli",
+        "en": "Englanti",
+        "de-DE": "Saksa"
     },
     "unknownRole": "Tuntematon Rooli",
     "openInvitations": "Avaa Kutsut",
