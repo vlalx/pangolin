@@ -36,7 +36,6 @@ export function TopBar({ orgId, orgs }: TopBarProps) {
             <div>
                 <ProfileIcon />
             </div>
-          </div>
         </div>
     );
 }
