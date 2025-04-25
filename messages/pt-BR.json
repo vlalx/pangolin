@@ -1,4 +1,9 @@
 {
+    "locales": {
+        "label": "Language",
+        "en": "English",
+        "de-DE": "German"
+    },
     "unknownRole": "Função desconhecida",
     "openInvitations": "Convites Abertos",
     "manageInvitations": "Gerencie seus convites para outros usuários",
