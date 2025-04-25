@@ -1,8 +1,8 @@
 {
     "locales": {
-        "label": "Language",
-        "en": "English",
-        "de-DE": "German"
+        "label": "Język",
+        "en": "Angielski",
+        "de-DE": "niemiecki"
     },
     "unknownRole": "Nieznana rola",
     "openInvitations": "Otwórz zaproszenia",
