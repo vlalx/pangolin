@@ -1,4 +1,9 @@
 {
+    "locales": {
+        "label": "Language",
+        "en": "English",
+        "de-DE": "German"
+    },
     "unknownRole": "役割が不明です",
     "openInvitations": "招待状を開く",
     "manageInvitations": "他のユーザーへの招待状を管理する",
