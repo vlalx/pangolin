@@ -1,4 +1,9 @@
 {
+    "locales": {
+        "label": "Language",
+        "en": "English",
+        "de-DE": "German"
+    },
     "unknownRole": "Неизвестная роль",
     "openInvitations": "Открытые приглашения",
     "manageInvitations": "Управление вашими приглашениями другим пользователям",
