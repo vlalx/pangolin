@@ -1,5 +1,6 @@
 {
     "locales": {
+        "label": "Language"
         "en": "Englisch",
         "de-DE": "Deutsch"
     }
