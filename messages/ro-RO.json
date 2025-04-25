@@ -1,8 +1,8 @@
 {
     "locales": {
-        "label": "Language",
-        "en": "English",
-        "de-DE": "German"
+        "label": "Limba",
+        "en": "Română",
+        "de-DE": "Germană"
     },
     "unknownRole": "Rolul necunoscut",
     "openInvitations": "Deschide invitațiile",
