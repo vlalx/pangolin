@@ -1,4 +1,9 @@
 {
+    "locales": {
+        "label": "Language",
+        "en": "English",
+        "de-DE": "German"
+    },
     "unknownRole": "Άγνωστος Ρόλος",
     "openInvitations": "Ανοιχτές Προσκλήσεις",
     "manageInvitations": "Διαχειριστείτε τις προσκλήσεις σας σε άλλους χρήστες",
