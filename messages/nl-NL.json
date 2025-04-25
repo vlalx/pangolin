@@ -1,8 +1,8 @@
 {
     "locales": {
-        "label": "Language",
-        "en": "English",
-        "de-DE": "German"
+        "label": "Taal",
+        "en": "Nederlands",
+        "de-DE": "Duits"
     },
     "unknownRole": "Onbekende rol",
     "openInvitations": "Open uitnodigingen",
