@@ -1,8 +1,8 @@
 {
     "locales": {
-        "label": "Language",
-        "en": "English",
-        "de-DE": "German"
+        "label": "Язык",
+        "en": "Russian",
+        "de-DE": "Немецкий"
     },
     "unknownRole": "Неизвестная роль",
     "openInvitations": "Открытые приглашения",
