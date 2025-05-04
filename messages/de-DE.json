@@ -1,0 +1,17 @@
+{
+    "locales": {
+        "label": "Sprache",
+        "en": "Englisch",
+        "de-DE": "Deutsch"
+    },
+    "setupCreate": "Erstelle deine Organisation, Seite und Ressourcen",
+    "setupNewOrg": "Neue Organisation",
+    "setupCreateOrg": "Organisation erstellen",
+    "setupCreateSite": "Seite erstellen",
+    "setupCreateResources": "Ressource erstellen",
+    "setupOrgName": "Organisation's Name",
+    "setupDisplayName": "Dies ist der Anzeigename für Ihre Organisation.",
+    "setupOrgId": "Organisations-ID",
+    "setupIdentifierMessage": "Dies ist der eindeutige Bezeichner für Ihre Organisation. Dies ist getrennt vom Anzeigenamen.",
+    "setupErrorIdentifier": "Organisations-ID ist bereits vergeben. Bitte wählen Sie eine andere."
+}
