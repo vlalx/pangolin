@@ -1,5 +1,4 @@
 import { Layout } from "@app/components/Layout";
-import ProfileIcon from "@app/components/ProfileIcon";
 import { verifySession } from "@app/lib/auth/verifySession";
 import { pullEnv } from "@app/lib/pullEnv";
 import UserProvider from "@app/providers/UserProvider";

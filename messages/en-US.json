@@ -1,0 +1,17 @@
+{
+    "locales": {
+        "label": "Language",
+        "en-US": "English",
+        "de-DE": "German"
+    },
+    "setupCreate": "Create your organization, site, and resources",
+    "setupNewOrg": "New Organization",
+    "setupCreateOrg": "Create Organization",
+    "setupCreateSite": "Create Site",
+    "setupCreateResources": "Create Resources",
+    "setupOrgName": "Organization Name",
+    "setupDisplayName": "This is the display name for your organization.",
+    "setupOrgId": "Organization ID",
+    "setupIdentifierMessage": "This is the unique identifier for your organization. This is separate from the display name.",
+    "setupErrorIdentifier": "Organization ID is already taken. Please choose a different one."
+}

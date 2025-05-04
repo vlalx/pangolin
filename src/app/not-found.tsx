@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default async function NotFound() {
     return (
         <div className="w-full max-w-md mx-auto p-3 md:mt-32 text-center">
