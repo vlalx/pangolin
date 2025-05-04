@@ -13,5 +13,14 @@
     "setupDisplayName": "This is the display name for your organization.",
     "setupOrgId": "Organization ID",
     "setupIdentifierMessage": "This is the unique identifier for your organization. This is separate from the display name.",
-    "setupErrorIdentifier": "Organization ID is already taken. Please choose a different one."
+    "setupErrorIdentifier": "Organization ID is already taken. Please choose a different one.",
+    "componentsErrorNoMemberCreate": "You are not currently a member of any organizations. Create an organization to get started.",
+    "componentsErrorNoMember": "You are not currently a member of any organizations.",
+    "welcome": "Welcome to Pangolin",
+    "componentsCreateOrg": "Create an Organization",
+    "componentsMember": "You're a member of {count, plural, =0 {no organization} =1 {one organization} other {# organizations}}.",
+    "componentsInvalidKey": "Invalid or expired license keys detected. Follow license terms to continue using all features.",
+    "dismiss": "Dismiss",
+    "componentsLicenseViolation": "License Violation: This server is using {usedSites} sites which exceeds its licensed limit of {maxSites} sites. Follow license terms to continue using all features.",
+    "componentsSupporterMessage": "Thank you for supporting Pangolin as a {tier}!"
 }
