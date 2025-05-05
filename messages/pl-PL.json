@@ -190,6 +190,8 @@
     "resourceLearnRaw": "Dowiedz się, jak skonfigurować zasoby TCP/UDP",
     "resourceBack": "Powrót do zasobów",
     "resourceGoTo": "Przejdź do zasobu",
+    "resourceDelete": "Delete Resource",
+    "resourceDeleteConfirm": "Confirm Delete Resource",
     "visibility": "Widoczność",
     "enabled": "Włączone",
     "disabled": "Wyłączone",
